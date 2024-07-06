@@ -7,21 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B61F94E2C366FFF0070E69E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6B61F94D2C366FFF0070E69E /* SnapKit */; };
+		6B61F9512C3676BA0070E69E /* SUIKColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61F9502C3676BA0070E69E /* SUIKColors.swift */; };
 		6B7CB0B62C3577700045304A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CB0B52C3577700045304A /* AppDelegate.swift */; };
 		6B7CB0B82C3577700045304A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CB0B72C3577700045304A /* SceneDelegate.swift */; };
-		6B7CB0BA2C3577700045304A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CB0B92C3577700045304A /* ViewController.swift */; };
 		6B7CB0BF2C3577720045304A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B7CB0BE2C3577720045304A /* Assets.xcassets */; };
 		6B7CB0C22C3577720045304A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B7CB0C12C3577720045304A /* Base */; };
+		6B7CB0D42C366AEB0045304A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CB0D32C366AEB0045304A /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B61F9502C3676BA0070E69E /* SUIKColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIKColors.swift; sourceTree = "<group>"; };
 		6B7CB0B22C3577700045304A /* shift-delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shift-delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7CB0B52C3577700045304A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B7CB0B72C3577700045304A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B7CB0B92C3577700045304A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B7CB0BE2C3577720045304A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B7CB0C12C3577720045304A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B7CB0C32C3577720045304A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B7CB0D32C366AEB0045304A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +32,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B61F94E2C366FFF0070E69E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B61F94F2C3676710070E69E /* ShiftUiKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B61F9502C3676BA0070E69E /* SUIKColors.swift */,
+			);
+			path = ShiftUiKit;
+			sourceTree = "<group>";
+		};
 		6B7CB0A92C3577700045304A = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +66,23 @@
 		6B7CB0B42C3577700045304A /* shift-delivery */ = {
 			isa = PBXGroup;
 			children = (
+				6B61F94F2C3676710070E69E /* ShiftUiKit */,
+				6B7CB0CE2C3669500045304A /* ui */,
 				6B7CB0B52C3577700045304A /* AppDelegate.swift */,
 				6B7CB0B72C3577700045304A /* SceneDelegate.swift */,
-				6B7CB0B92C3577700045304A /* ViewController.swift */,
 				6B7CB0BE2C3577720045304A /* Assets.xcassets */,
 				6B7CB0C02C3577720045304A /* LaunchScreen.storyboard */,
 				6B7CB0C32C3577720045304A /* Info.plist */,
 			);
 			path = "shift-delivery";
+			sourceTree = "<group>";
+		};
+		6B7CB0CE2C3669500045304A /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				6B7CB0D32C366AEB0045304A /* AuthViewController.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +101,9 @@
 			dependencies = (
 			);
 			name = "shift-delivery";
+			packageProductDependencies = (
+				6B61F94D2C366FFF0070E69E /* SnapKit */,
+			);
 			productName = "shift-delivery";
 			productReference = 6B7CB0B22C3577700045304A /* shift-delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 6B7CB0A92C3577700045304A;
+			packageReferences = (
+				6B61F94C2C366FFF0070E69E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 6B7CB0B32C3577700045304A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7CB0BA2C3577700045304A /* ViewController.swift in Sources */,
+				6B7CB0D42C366AEB0045304A /* AuthViewController.swift in Sources */,
+				6B61F9512C3676BA0070E69E /* SUIKColors.swift in Sources */,
 				6B7CB0B62C3577700045304A /* AppDelegate.swift in Sources */,
 				6B7CB0B82C3577700045304A /* SceneDelegate.swift in Sources */,
 			);
@@ -349,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B61F94C2C366FFF0070E69E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B61F94D2C366FFF0070E69E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B61F94C2C366FFF0070E69E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B7CB0AA2C3577700045304A /* Project object */;
 }
