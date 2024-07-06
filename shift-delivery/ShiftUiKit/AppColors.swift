@@ -7,7 +7,8 @@
 
 import UIKit
 
-enum SUIKColors {
+enum AppColors {
     static let borderLight = UIColor(named: "borderLight")
-    static let buttonBlue = UIColor(named: "blueButton")
+    static let bgBrand = UIColor(named: "bgBrand")
+    static let secondaryText = UIColor(named: "secondaryText")
 }
